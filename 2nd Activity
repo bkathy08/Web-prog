@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Activity 4</title>
+    
+    
+</head>
+<body>
+     <h1 style="align-text : center "> <i> <b> Activity # 4 </b> </i>
+
+     <form  action ="compute.php" method = "post" style = " margin-center: 80% ">
+     <table border="20" cellpadding="4" cellspacing="2" align="center" width="340">
+			<tbody><tr style="text-align:center;">
+				<td colspan="2"><b>Activity # 4</b></td>
+			</tr>
+			<tr>
+				<td>Employee Name:</td>
+				<td><input type="text" name="name" id="Size"></td>
+			</tr>
+			<tr>
+				<td>Total Days of Work:</td>
+				<td><input type="text" name="total" id="Size"></td>
+			</tr>
+			<tr>
+				<td>Daily Rate:</td>
+				<td><input type="text" name="Daily" id="Size"></td>
+			</tr>
+			<tr>
+				<td>Cash Advance:</td>
+				<td><input type="text" name="Cash" id="Size"></td>
+			</tr>
+			<tr style="text-align:right;">
+				<td colspan="2"><input type="submit" name="submit" value="Compute" style="width:150px;"></td>
+			</tr>
+		</tbody></table>
+        
+
+</form>
+
+</body>
+</html>
+
+
+// SECOND PART //
+
+<?php
+
+$name=$_POST['name'] ;
+$total=$_POST['total'] ;
+$Daily=$_POST['Daily'] ;
+$Cash=$_POST['Cash'] ;
+$gross = $Daily * $total;
+$tax =$gross*0.05;
+$sss =$gross*0.02;
+$phil = $gross *0.03;
+$pag = 50;
+$deduction = $Cash+ $tax + $sss + $phil + $pag;
+$net = $gross - $deduction;
+
+
+
+echo " Name of Employment : $name <br> <br>  
+Daily Rate:$Daily <br> <br> Day of Work: $total";
+echo "GrossPay : $gross <br> <br> Deduction of the Day ";
+echo "Tax : $tax <br> <br> Tax of the Day $sss <br> <br>: $phil 
+<br> <br> Cash in Advance: $Cash <br> <br> ";
+echo "Total Deduction: $deduction <br> <br> Net Pay:$net <br> <br> ";
+
+
+
+
+?>
