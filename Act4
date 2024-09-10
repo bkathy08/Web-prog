@@ -47,7 +47,17 @@
 
 
 
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`device-width`, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style=text-align:center>
+   
+<?php 
+
 
 $name=$_POST['name'] ;
 $total=$_POST['total'] ;
@@ -66,12 +76,14 @@ $net = $gross - $deduction;
 echo " Name of Employment : $name  <br> <br> "; 
 echo "Daily Rate :$Daily <br> <br> ";
 echo " Day of Work : $total  <br> <br>";
+
 echo " Gross Pay : $gross <br> <br> ";
 echo "Tax of the Day: $tax <br> <br>";
 echo " Sss: $sss <br> <br> ";
 echo " Philhealth ng taon: $phil <br> <br> ";
 echo " Pag-ibig: $pag <br> <br> ";
 echo "Cash in Advance: $Cash <br> <br> ";
+
 echo "Total Deduction: $deduction <br> <br> ";
 echo " Deduction of the Day: $deduction <br> <br> ";
 echo "Net Pay:$net <br> <br> ";
@@ -79,4 +91,7 @@ echo "Net Pay:$net <br> <br> ";
 
 
 
+
 ?>
+</body>
+</html>
