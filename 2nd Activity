@@ -45,6 +45,8 @@
 
 // SECOND PART //
 
+
+
 <?php
 
 $name=$_POST['name'] ;
@@ -61,12 +63,18 @@ $net = $gross - $deduction;
 
 
 
-echo " Name of Employment : $name <br> <br>  
-Daily Rate:$Daily <br> <br> Day of Work: $total";
-echo "GrossPay : $gross <br> <br> Deduction of the Day ";
-echo "Tax : $tax <br> <br> Tax of the Day $sss <br> <br>: $phil 
-<br> <br> Cash in Advance: $Cash <br> <br> ";
-echo "Total Deduction: $deduction <br> <br> Net Pay:$net <br> <br> ";
+echo " Name of Employment : $name  <br> <br> "; 
+echo "Daily Rate :$Daily <br> <br> ";
+echo " Day of Work : $total  <br> <br>";
+echo " Gross Pay : $gross <br> <br> ";
+echo "Tax of the Day: $tax <br> <br>";
+echo " Sss: $sss <br> <br> ";
+echo " Philhealth ng taon: $phil <br> <br> ";
+echo " Pag-ibig: $pag <br> <br> ";
+echo "Cash in Advance: $Cash <br> <br> ";
+echo "Total Deduction: $deduction <br> <br> ";
+echo " Deduction of the Day: $deduction <br> <br> ";
+echo "Net Pay:$net <br> <br> ";
 
 
 
